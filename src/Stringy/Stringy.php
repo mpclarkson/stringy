@@ -68,7 +68,7 @@ class Stringy {
      */
     public function startsWith($substring)
     {
-        return substr($this->text, strlen($substring)) == true ? true : false;
+        return strrpos($this->text, $substring, -strlen($substring)) !== false;
     }
 
     /**
@@ -77,7 +77,7 @@ class Stringy {
      */
     public function endsWith($substring)
     {
-        return substr($this->text, -strlen($substring)) == true ? true : false;
+        return ($temp = strlen($this->text) - strlen($substring)) >= 0 && strpos($this->text, $substring, $temp) !== false;
     }
 
     /**
@@ -123,7 +123,7 @@ class Stringy {
      */
     public function lowercaseFirst()
     {
-        $this->text = ucfirst($this->text);
+        $this->text = lcfirst($this->text);
         return $this;
     }
 
@@ -152,13 +152,13 @@ class Stringy {
     {
         $results = [];
 
-        $arr = explode($this->text, ".");
+        $arr = explode(".", $this->text);
 
         foreach($arr as $sentence) {
-            $results[] = ucfirst($sentence);
+            $results[] = ucfirst(trim($sentence));
         }
 
-        $this->text = implode(".", $results);
+        $this->text = implode(". ", $results);
         return $this;
     }
 
@@ -176,16 +176,6 @@ class Stringy {
      * @return $this
      */
     public function apply(callable $function)
-    {
-        $this->text = $function($this->text);
-        return $this;
-    }
-
-    /**
-     * @param callable $function
-     * @return $this
-     */
-    public function applyToChars(callable $function)
     {
         $arr = str_split($this->text);
 

@@ -6,7 +6,7 @@
  * Time: 1:25 PM
  */
 
-namespace Mpclarkson;
+namespace Mpclarkson\Stringy;
 
 
 class StringyException extends \Exception
