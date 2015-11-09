@@ -36,7 +36,7 @@ After applying any methods, the underlying text/string can be accessed as follow
 $stringy = new Stringy("mystring");
 stringy->append("is fun", " ");
 
-echo $stringy->string;
+echo $stringy->string();
 //"mystring is fun";
 
 ```
