@@ -41,6 +41,30 @@ echo $stringy->string;
 
 ```
 
+Methods
+------------
+
+Method | Parameters | Returns
+--- | --- | ---
+string | nil | string
+truncate | $chars = 50, $appendWith = "..." | $this
+length | nil | int
+contains | $substring | bool
+startsWith | $substring | bool
+endsWith | $substring | bool
+append | $string | $this
+reverse | nil | $this
+uppercase | nil | $this
+uppercaseFirst | nil | $this
+lowercase | nil | $this
+lowercaseFirst | nil | $this
+titleCase | nil | $this
+sentenceCase | nil | $this
+toArray | $delimiter = null | array
+apply | callback | $this
+
+Checkout the tests for examples of each method.
+
 Requirements
 ------------
 
