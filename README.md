@@ -1,8 +1,8 @@
 Stringy - Object Oriented Manipulation of Strings in PHP!
 =========================================================
 
-[![Build Status](https://travis-ci.org/mpclarkson/stringy.svg?branch=master)](https://travis-ci.org/mpclarkson/stringy)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/mpclarkson/stringy/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/mpclarkson/stringy/?branch=master)
+[![Build Status](https://travis-ci.org/mpclarkson/stringy.svg?branch=master)](https://travis-ci.org/mpclarkson/stringy)
 
 Overview
 --------
