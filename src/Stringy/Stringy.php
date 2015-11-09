@@ -14,7 +14,7 @@ class Stringy {
 
     public function __construct($string)
     {
-        if(!is_string($string)) {
+        if (!is_string($string)) {
             throw new StringyException();
         }
 
@@ -37,7 +37,7 @@ class Stringy {
     public function truncate($chars = 50, $appendWith = "...")
     {
         $len = strlen($this->text);
-        if($len > $chars) {
+        if ($len > $chars) {
             $this->text = substr($this->text, 0, $chars) . $appendWith;
         }
 
@@ -153,7 +153,7 @@ class Stringy {
 
         $arr = explode(".", $this->text);
 
-        foreach($arr as $sentence) {
+        foreach ($arr as $sentence) {
             $results[] = ucfirst(trim($sentence));
         }
 
@@ -180,7 +180,7 @@ class Stringy {
 
         $result = [];
 
-        foreach($arr as $char) {
+        foreach ($arr as $char) {
             $result[] = $function($char);
         }
 
