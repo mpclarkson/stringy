@@ -54,6 +54,16 @@ class StringyTest extends \PHPUnit_Framework_TestCase {
 
         $this->assertEquals("foo...", $this->stringy->string());
     }
+    /**
+     * @covers Stringy::truncate
+     * @uses Stringy
+     */
+    public function testTruncateLongerThanChar()
+    {
+        $this->stringy->truncate(30000);
+
+        $this->assertEquals("foo string", $this->stringy->string());
+    }
 
     /**
      * @covers Stringy::length
