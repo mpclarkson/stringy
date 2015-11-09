@@ -37,11 +37,10 @@ class Stringy {
     public function truncate($chars = 50, $appendWith = "...")
     {
         $len = strlen($this->text);
-        if($len <= $chars) {
-            return $this->text;
+        if($len > $chars) {
+            $this->text = substr($this->text, 0, $chars) . $appendWith;
         }
 
-        $this->text = substr($this->text, 0, $chars) . $appendWith;
         return $this;
     }
 
