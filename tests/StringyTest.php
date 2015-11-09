@@ -21,7 +21,7 @@ class StringyTest extends \PHPUnit_Framework_TestCase {
      */
     public function testConstruct()
     {
-        $this->assertInstanceOf(Stringy::class, $this->stringy);
+        $this->assertInstanceOf('Mpclarkson\Stringy\Stringy', $this->stringy);
     }
 
     /**
