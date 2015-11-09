@@ -2,7 +2,7 @@
     "name": "mpclarkson/stringy",
     "type": "library",
     "description": "A PHP Library that provides a consistent api for object oriented manipulation of strings.",
-    "keywords": ["apple-touch-icon", "favicon", "icon", "finder", "Scraper"],
+    "keywords": ["string", "manipulation", "text", "object oriented"],
     "homepage": "https://github.com/mpclarkson/icon-scraper",
     "license": "Apache-2.0",
     "authors": [
