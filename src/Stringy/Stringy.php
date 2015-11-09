@@ -185,7 +185,7 @@ class Stringy {
             $result[] = $function($char);
         }
 
-        $this->text =  implode("", $result);
+        $this->text = implode("", $result);
         return $this;
 
     }

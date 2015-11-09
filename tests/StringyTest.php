@@ -223,5 +223,4 @@ class StringyTest extends \PHPUnit_Framework_TestCase {
 
         $this->assertEquals("f-o-o- -s-t-r-i-n-g-", $this->stringy->string());
     }
-
 }

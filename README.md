@@ -12,7 +12,6 @@ Are you stick to death of PHP's inconsistencies in terms on manipulating strings
 Rather than constantly having to write obtuse code like this to check if a string contains a substring:
 
 ```  php
-
   strpos($mystring, $substring) !== false ? true : false;
 
 ```
@@ -20,7 +19,6 @@ Rather than constantly having to write obtuse code like this to check if a strin
 You can now do this (and many other things), sensibly!
 
 ``` php
-
   $string = new String($myString);
 
   $bool = $string->contains($substring);
@@ -35,13 +33,11 @@ Usage
 After applying any methods, the underlying text/string can be accessed as follows:
 
 ```php
-
 $stringy = new Stringy("mystring");
 stringy->append("is fun", " ");
 
 echo $stringy->string;
-
-"mystring is fun";
+//"mystring is fun";
 
 ```
 
@@ -67,8 +63,8 @@ Use [Composer](https://getcomposer.org) by adding the following lines in your `c
 Todos
 -----
 
-  * More tests
-  * Improve code style
+  * More methods
+  * Contributions welcome
 
 
 Credits
