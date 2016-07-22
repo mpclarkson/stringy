@@ -34,7 +34,7 @@ After applying any methods, the underlying text/string can be accessed as follow
 
 ```php
 $stringy = new Stringy("mystring");
-stringy->append("is fun", " ");
+$stringy->append("is fun", " ");
 
 echo $stringy->string();
 //"mystring is fun";
