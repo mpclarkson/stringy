@@ -96,4 +96,4 @@ Credits
 
 This has been inspired by the beautify string manipulation in Apple's Swift language.
 
-Thanks goes to [Hilenium](http://hilenium.com).
+Thanks goes to [Paper Planes Digital Marketing in Brisbane](https://flypaperplanes.co).
